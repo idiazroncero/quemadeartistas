@@ -1,0 +1,34 @@
+body {
+}
+
+#main-wrapper {
+
+}
+
+.card {
+	padding: ritmo(8) ritmo(4);
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	background-color: $amarillo;
+	text-align:center;
+	overflow:hidden;
+	p {
+		margin:0;
+	}
+	.separador {
+		margin: ritmo(2) 0;
+	}
+}
+
+.card--big {
+	height:100vh;
+	justify-content:flex-start;
+}
+
+.card--azul {
+	background-color: $azul;
+	color:$blanco;
+}

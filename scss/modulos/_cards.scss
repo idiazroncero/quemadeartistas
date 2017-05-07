@@ -1,0 +1,64 @@
+#logo {
+	background-image: url('../img/quema.jpg');
+	background-repeat:no-repeat;
+	background-position: bottom center;
+	background-attachment:fixed;
+}
+
+#donde {
+}
+
+.separador {
+	padding: ritmo(1);
+	border-top:1px solid $blanco;
+	border-bottom:1px solid $blanco;
+	display:inline-block;
+}
+
+.artistas {
+	margin:0;
+	padding:0;
+	li {
+		list-style-type:none;
+		@include ritmo-font-size($h3-size);
+		margin-bottom:ritmo(3);
+		position:relative;
+		&:nth-child(even) {
+			left:-200%;
+			transition:left 0.75s ease-out 0.15s;
+			&.artistas--shown {
+				left:0;
+			}
+		}
+		&:nth-child(odd) {
+			right:-200%;
+			transition:right 0.75s ease-out 0.15s;
+			&.artistas--shown {
+				right:0;
+			}
+		}
+		&:after {
+			content:"";
+			display:block;
+			border-bottom:2px solid $azul;
+			width:30px;
+			margin:ritmo(1.5) auto 0 auto;
+		}
+	}
+	.artistas_main {
+		@include ritmo-font-size($h1-size);
+	}
+}
+
+#como {
+	p {
+		text-transform:uppercase;
+		letter-spacing:0.01rem;
+	}
+	iframe {
+		display:block;
+		width:75%;
+		height:300px;
+		margin: ritmo(2) 0;
+	}
+}
