@@ -106,7 +106,7 @@ module.exports = function(grunt) {
 		      // The path or directory to your compiled project
 		      project: 'dist/',
 		      // The domain or subdomain to deploy to
-		      domain: 'quema.surge.sh'
+		      domain: 'quemadeartistas.es'
 		    }
 		  }
 		}

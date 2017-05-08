@@ -2,7 +2,7 @@ body {
 }
 
 #main-wrapper {
-
+	margin-bottom:ritmo(12);
 }
 
 .card {
@@ -25,6 +25,9 @@ body {
 
 .card--big {
 	height:100vh;
+	@include breakpoint(max-width 1088px) {
+		height:66vh;
+	}
 	justify-content:flex-start;
 }
 

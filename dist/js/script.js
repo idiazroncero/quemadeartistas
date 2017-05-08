@@ -10931,6 +10931,8 @@ $(function(){
   		}
   	},
   	offset: 'bottom-in-view'
-  })
+  });
+
+  var rellax = new Rellax('.rellax');
 
 });
