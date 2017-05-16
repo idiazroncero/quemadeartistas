@@ -12,3 +12,36 @@
 		}
 	}
 }
+
+.rrss {
+	margin:0 auto;
+	padding:0;
+	position:fixed;
+	z-index:9;
+	bottom:4%;
+	left:5px;
+	//transform: translateY(-50%);
+	//background:$amarillo;
+	padding:  5px;
+	// border-bottom:4px solid $azul;
+	// border-left: 2px solid $azul;
+	// border-right:2px solid $azul;
+	li {
+		list-style-type:none;
+		padding: 5px;
+		display:block;
+		vertical-align:bottom;
+		a {
+			display:block;
+			&:link, &:visited {
+				
+			}
+			&:focus, &:hover, &:active {
+				border:none;
+			}
+			img {
+				display:block;
+			}
+		}
+	}
+}
