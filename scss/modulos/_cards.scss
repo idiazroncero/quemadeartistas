@@ -2,7 +2,6 @@
 	background-image: url('../img/quema.jpg');
 	background-repeat:no-repeat;
 	background-position: bottom center;
-	background-attachment:fixed;
 	@include breakpoint(max-width 1088px) {
 		background-size:contain;
 		background-attachment: initial;
@@ -35,10 +34,15 @@
 
 .artistas {
 	margin:0;
+	@include breakpoint($medium) {
+		margin: 0 25%;
+	}
 	padding:0;
 	li {
 		list-style-type:none;
-		@include ritmo-font-size($h3-size);
+		@include breakpoint($medium) {
+			@include ritmo-font-size($h4-size);
+		}
 		margin-bottom:ritmo(3);
 		position:relative;
 		&:nth-child(even) {
@@ -177,5 +181,13 @@
 	a:active {
 		color:$negro;
 		background: $amarillo;
+	}
+}
+
+#patrocinadores {
+	img, picture {
+		margin:0 auto;
+		display:block;
+		max-width:100%;
 	}
 }
